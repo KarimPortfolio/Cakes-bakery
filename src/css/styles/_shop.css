@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Arima:wght@300;400;700&family=Bebas+Neue&family=Cinzel:wght@400;500&family=Cookie&family=Dancing+Script:wght@400;500&family=Girassol&family=Josefin+Sans:wght@400;500;600;700&family=Libre+Bodoni&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Mouse+Memoirs&family=Nunito:wght@300;400;500;600;700;800;900&family=Pacifico&family=Philosopher:wght@400;700&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Raleway:ital@0;1&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&family=Yeseva+One&family=Yusei+Magic&display=swap');
+
+
+:root{
+    --main-font:'Josefin Sans', sans-serif;
+    --main-font2:'Montserrat', sans-serif;
+    --main-color:#d6672f;
+    --transition:all 400ms ease-in-out;
+}
+
+#shop .row img{
+    width: 80% !important;
+    height: 55% !important;
+}
+
+#shop .row button{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: var(--transition);
+    border-radius: 0;
+}
+
+#shop .row button:hover{
+    background-color: var(--main-color);
+    border: 2px solid transparent;
+    color: #FFFF;
+}
+
+#shop .row h5{
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+#shop .row p{
+    font-weight: 600;
+    font-family: var(--main-font2);
+}

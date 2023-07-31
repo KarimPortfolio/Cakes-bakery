@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Arima:wght@300;400;700&family=Bebas+Neue&family=Cinzel:wght@400;500&family=Cookie&family=Dancing+Script:wght@400;500&family=Girassol&family=Josefin+Sans:wght@400;500;600;700&family=Libre+Bodoni&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Mouse+Memoirs&family=Nunito:wght@300;400;500;600;700;800;900&family=Pacifico&family=Philosopher:wght@400;700&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Raleway:ital@0;1&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&family=Yeseva+One&family=Yusei+Magic&display=swap');
+
+
+:root{
+    --main-font:'Josefin Sans', sans-serif;
+    --main-font2:'Montserrat', sans-serif;
+    --main-color:#d6672f;
+    --transition:all 400ms ease-in-out;
+}
+
+footer{
+    background:linear-gradient(45deg, #ffefda ,#feccb2);
+}
+
+footer .logo_image img{
+    width: 100px;
+    height: 80px;
+}
+
+footer .info_about_brand p{
+    font-family: var(--main-font2);
+}
+
+footer .quick_links_title h5,
+footer .contact_us_title h5{
+    font-family: var(--main-font);
+    font-size: 23px;
+    color: var(--main-color);
+}
+
+footer .quick_links a{
+    color: #000;
+    text-decoration:none;
+}
+
+footer .contact_us p i{
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+footer .contact_us p a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer .social_media div{
+    margin: 20px;
+}
+
+footer .social_media div a{
+    background-color: var(--main-color);
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #FFFF;
+}
+
+
+footer .social_media div a i{
+    font-size: 30px;
+}
+
+footer .row{
+    position: relative;
+}
+
+footer .row::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    opacity: 0.4;
+}
+
+footer .website_developer p{
+    font-size: 15px;
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 600;
+}
+
+footer .website_developer p a{
+    color: var(--main-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+@media (max-width:380px){
+    footer .social_media div a{
+        width: 40px;
+        height: 40px;
+    }
+    footer .social_media div a i{
+        font-size: 18px;
+    }
+    footer .social_media div{
+        margin:15px 10px;
+    }
+}

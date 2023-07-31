@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Arima:wght@300;400;700&family=Bebas+Neue&family=Cinzel:wght@400;500&family=Cookie&family=Dancing+Script:wght@400;500&family=Girassol&family=Josefin+Sans:wght@400;500;600;700&family=Libre+Bodoni&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Mouse+Memoirs&family=Nunito:wght@300;400;500;600;700;800;900&family=Pacifico&family=Philosopher:wght@400;700&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Raleway:ital@0;1&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&family=Yeseva+One&family=Yusei+Magic&display=swap');
+@import url('../styles/_cookiespopup.css');
+
+:root{
+    --main-font:'Josefin Sans', sans-serif;
+    --main-font2:'Montserrat', sans-serif;
+    --main-color:#d6672f;
+    --transition:all 400ms ease-in-out;
+}
+
+.aboutus_title h5{
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: 35px;
+    position: relative;   
+}
+
+.aboutus_title h5::after{
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: #d6672f;
+    position: absolute;
+    top: 16px;
+    left: -75px;
+}
+
+.aboutus_title p{
+    font-family:var(--main-font2);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bakerpicture{
+    display: flex;
+}
+
+
+.bakerinfo h5{
+    color: #d6672f;
+    font-family: var(--main-font2);
+    font-size: 17px;
+}
+
+.bakerinfo ~ div h5{
+    position: relative;
+    font-family: var(--main-font);
+    color: #000;
+}
+
+.bakerinfo ~ div h5::after{
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: #d6672f;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.bakerinfo ~ div p{
+    text-align: justify;
+    line-height: 35px;
+}
+
+.bakerinfo ~ div button{
+    background-color: transparent;
+    color: #d6672f;
+    border: 2px solid #d6672f;
+    border-radius: 0;
+    transition: var(--transition);
+    padding: 10px 30px;
+}
+
+.bakerinfo ~ div button:hover{
+    background-color: #d6672f;
+    border: 2px solid transparent;
+    color: #FFFF;
+}
+
+.my_categorie div img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.categ_parts{
+    margin: 15px;
+    padding: 0 !important;
+    border-radius: 8px;
+    background:linear-gradient(45deg, #fae4c6 ,#fcd5c1) ;
+}
+
+.categ_parts h5{
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+.categ_parts p{
+    font-family: 'Nunito' , sans-serif;
+}
+
+.categ_parts div{
+    background:linear-gradient(45deg, #fdd091 ,#faa87f) ;
+    padding: 20px;
+    border-radius: 8px  8px 50% 50%;
+}
+
+@media (max-width:992px) {
+    .bakerinfo ~ div{
+        margin-top: 0px !important;
+    }
+    .bakerinfo ~ div h5{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        text-align: center !important;
+    }
+    .bakerinfo ~ div p{
+        padding: 0 !important;
+        margin: 0  !important;
+        text-align: center;
+    }
+    .bakerinfo ~ div h5::after{
+        width: 50%;
+        left: 25%;
+    }
+}

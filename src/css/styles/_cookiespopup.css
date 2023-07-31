@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Arima:wght@300;400;700&family=Bebas+Neue&family=Cinzel:wght@400;500&family=Cookie&family=Dancing+Script:wght@400;500&family=Girassol&family=Josefin+Sans:wght@400;500;600;700&family=Libre+Bodoni&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Mouse+Memoirs&family=Nunito:wght@300;400;500;600;700;800;900&family=Pacifico&family=Philosopher:wght@400;700&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Raleway:ital@0;1&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&family=Yeseva+One&family=Yusei+Magic&display=swap');
+
+.cookies_popup{
+    background: linear-gradient(45deg, #fce7c9 ,#ffe3d5 );
+    width: 60px;
+    height: 60px;
+    /* width: 500px; */
+    padding:0;
+    /* padding: 10px 10px 30px 10px; */
+    border-radius: 50%;
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 8px 0px #00000031;
+    position: fixed;
+    top: 85%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    z-index: 200;
+    display: none;
+}
+
+.cookies_popup .cookie_icon2,
+.cookies_popup .cookie_popup_text2{
+    display: none;
+}
+
+.cookies_popup .closeBtn2_hide{
+    display: none !important;
+}
+
+.closeBtn2{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: end !important;
+}
+.cookie_icon,
+.cookie_popup_text{
+    display: block !important;
+}
+
+.cookies_popup .closeBtn2 svg{
+    color: rgb(125, 124, 124) !important; 
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.cookies_popup .closeBtn2 svg:hover{
+    color: #FF0000 !important;
+}
+
+.cookies_popup .cookie_icon svg,
+.cookies_popup .cookie_open svg{
+    color: #e6b46f !important;
+}
+
+.cookies_popup .cookie_popup_text h4{
+    color: #d6672f;
+}
+
+.cookies_popup .cookie_popup_text p a{
+    color: #d6672f;
+}
+
+.cookies_popup .cookie_popup_text button{
+    color: #d6672f;
+    background-color: transparent;
+    border: 2px solid #d6672f;
+    width: 100%;
+    border-radius: 0;
+    transition: all 400ms ease-in-out;
+}
+.cookies_popup .cookie_popup_text button:hover{
+    color: #FFFF;
+    background-color: #d6672f;
+    border: 2px solid transparent;
+}
+
+@media (max-width:992px) {
+    .cookies_popup{
+        left: -20px;
+    }
+}
+
+@media (max-width:776px) {
+    .cookies_popup{
+        display: none !important;
+    }
+}
